@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--Inserire un frammento di codice HTML
+Filnema: Esercizio4.xml
+Autore: Giulia Bellandi-->
+
+<body>
+    <html>
+        <![DATA[
+        <div class="container">
+            <p>Sono Giulia</p>
+        </div>
+        ]]>
+    </html>
+</body>
