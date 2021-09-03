@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<!--scrivere e fare il check di un file xml non correttamente annidato
+<!--scrivere e fare il check di un file xml non correttamente annidato, correggerlo e fare aggiunte
 Filename: esercizio2.xml
 Autore: Giulia Bellandi-->
 <body>
@@ -9,12 +9,12 @@ Autore: Giulia Bellandi-->
         </p> <!--elemento p viene chiuso dopo element anche se gerarchicaente è al suo interno-->
 </body>
 
-<!--correzione e inserimento di elementi child e sibiling-->
+<!--correzione e inserimento di elementi child e sibling-->
 <body
     <element>
         <p>figlio di element</p>
     </element>
-    <sibiling>
+    <sibling>
         <child>sibiling è fratello di element, child è invece l'elemento figlio</child>
-    </sibiling>
+    </sibling>
 </body>
