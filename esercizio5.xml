@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE TEI [
+        <ELEMENT TEI (header, facsimile?, text+)>
+        <!ELEMENT header (#PCDATA)>
+        <!ELEMENT facsimile (#PCDATA)>
+        <!ELEMENT text (#PCDATA)>
+        ]>
+<TEI>
+    <header>Titolo</header>
+    <facsimile>Nota</facsimile>
+    <text>Testo</text>
+</TEI>
