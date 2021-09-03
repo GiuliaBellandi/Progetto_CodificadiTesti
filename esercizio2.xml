@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--scrivere e fare il check di un file xml non correttamente annidato
+Filename: esercizio2.xml
+Autore: Giulia Bellandi-->
+<body>
+    <element>
+        <p>
+    </element>
+        </p> <!--elemento p viene chiuso dopo element anche se gerarchicaente è al suo interno-->
+</body>
+
+<!--correzione e inserimento di elementi child e sibiling-->
+<body
+    <element>
+        <p>figlio di element</p>
+    </element>
+    <sibiling>
+        <child>sibiling è fratello di element, child è invece l'elemento figlio</child>
+    </sibiling>
+</body>
