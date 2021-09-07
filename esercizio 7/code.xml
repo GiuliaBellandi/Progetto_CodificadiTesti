@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus>
+<?xml-stylesheet type="text/xsl" href="template.xsl"?>
+<teiCorpus xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <teiHeader id="91">
+        <fileDesc>
+            <titleStmt>
+                <title>Titolo</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName>Organizzazione</orgName>
+                </publisher>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>Titolo originale</title>
+                    <author>Autore originale</author>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text xml:lang="it">
+        <body>
+            <div type="chapter">
+                <head>Titolo uno</head>
+                <p>Testo</p>
+            </div>
+            <div type="chapter">
+                <head>Titolo due</head>
+                <p>Testo 2</p>
+            </div>
+        </body>
+    </text>
+</teiCorpus>
