@@ -1,0 +1,62 @@
+body{
+	background-image: url(sfondo-carta-antica.jpg);
+	background-position: center;
+}
+
+h2{
+	color:#8B2500;
+	text-align: center;
+	position: center;
+  margin: 2%;
+	}
+
+#i{
+	width: 3%;
+	height: 5%;
+	margin-right: 2%;
+	float:right;
+}
+
+#testoInfo{
+	display:none;
+ 	background-color: #CDB38B ;
+ 	margin-left:65%;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	padding:5px 10px;
+	margin-top: 60px;
+}
+
+
+.right{
+	width: 50%;
+	height: 80%;
+	float: right;
+	margin-top: -30px;
+  margin-bottom: 10%;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+
+.left{
+	width: 50%;
+	height: 80%;
+  border-right: solid black 1px;
+	margin-top: -30px;
+  margin-bottom: 10%;
+}
+
+
+#CimgC img {
+  margin-top: 15%;
+	width: 50%;
+	height: 60%;
+}
+
+footer{
+	text-align: center;
+	color: #622100 ;
+	font-style: italic;
+	margin-top: 80px;
+	line-height: 12px;
+}

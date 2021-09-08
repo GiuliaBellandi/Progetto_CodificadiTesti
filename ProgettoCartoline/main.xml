@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "./myTEI.dtd">
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.3.0" >
+
+<!-- teiHeader con lista -->
+
+   <teiHeader xml:id="list">
+        <fileDesc> <!--contiene le informazioni relative al file-->
+            <titleStmt> <!--figlio obbligatorio-->
+                <title xml:lang="ita">Lista delle persone, dei luoghi e delle organizzazioni relative alle cartoline</title>
+<!-- LISTA PERSONE RESPONSABILI-->
+                <respStmt> <!--nome e cognome del trascrittore-->
+                    <resp>Trascritto da:</resp>
+                    <persName ref="#GB"> Giulia Bellandi</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Studentessa di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <date when="2021-07"> Luglio 2021 </date> <!-- data di compilazione -->
+                </edition>
+                 <respStmt>
+                    <resp>Codificato da:</resp> <!-- nome del codificatore-->
+                    <persName ref="#GB"> Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Compilato da:</resp> <!--nome dei compilatore -->
+                    <persName ref="#TC"> Tommaso Castagneto</persName>
+                    <persName ref="#GB"> Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico:</resp>
+                    <persName ref="#GP"> Giacomo Paolicchi</persName>
+                    <persName ref="#ES"> Enrica Salvatori</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <persName ref="#ER"> E. Ratti</persName>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt> <!--figlio obbligatorio-->
+                <publisher>
+                    <choice>
+                        <abbr>Unipi</abbr>
+                        <expan> Università di
+                            <placeName ref="#PI"> Pisa</placeName>
+                        </expan>
+                    </choice>
+                </publisher>
+                <pubPlace ref="#PI">Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>
+                    <choice>
+                        <abbr>LabCD</abbr>
+                        <expan>Laboratorio di Cultura Digitale</expan>
+                    </choice>
+                </distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine><placeName ref="list.xml#PI">Pisa</placeName></addrLine>
+                </address>
+            </publicationStmt>
+
+            <sourceDesc><!--figlio obbligatorio-->
+                <bibl>
+                    <interp> Due cartoline della Grande Guerra scritte da Giovanni indirizzate a Olivia Turtura.</interp>
+                </bibl>
+<!--LISTA PERSONE-->
+                <listPerson>
+                    <person xml:id="GB">
+                        <persName>
+                            <forename>Giulia</forename>
+                            <surname>Bellandi</surname>
+                        </persName>
+                        <occupation>Trascrittore</occupation>
+                    </person>
+                    <person xml:id="TC">
+                        <persName>
+                            <forename>Tommaso</forename>
+                            <surname>Castagneto</surname>
+                        </persName>
+                        <occupation>Compilatore</occupation>
+                    </person>
+                    <person xml:id="GP">
+                        <persName>
+                            <forename>Giacomo</forename>
+                            <surname>Paolicchi</surname>
+                        </persName>
+                        <occupation>Responsabile scientifico</occupation>
+                    </person>
+                    <person xml:id="ES">
+                        <persName>
+                            <forename>Enrica</forename>
+                            <surname>Salvatori</surname>
+                        </persName>
+                        <occupation>Resposanbile scientifico</occupation>
+                    </person>
+                    <person>
+                        <persName xml:id="ER">
+                            <forename><abbr>E</abbr></forename>
+                            <surname>Salvatori</surname>
+                        </persName>
+                        <occupation>Funzionario responsabile</occupation>
+                    </person>
+                    <!--lista nomi di persone all'interno delle due cartoline-->
+                    <person xml:id="G">
+                        <persName>
+                        <forename>Giovanni</forename>
+                        </persName>
+                        <note> Non si hanno informazioni relative al cognome e nelle cartoline si firma con il diminutivo "Giovannino" </note>
+                    </person>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Olivia</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <note> Destinataria delle due cartoline </note>
+                    </person>
+                    <person xml:id="AB">
+                        <persName>
+                            <forename>Adolfo</forename>
+                            <surname>Busi</surname>
+                        </persName>
+                        <note> Pittore dell'opera rappresentata sul fronte della cartolina </note>
+                    </person>
+                    <person xml:id="Corb">
+                        <persName>
+                            <forename><abbr>T.</abbr></forename>
+                            <surname>Corbella</surname>
+                        </persName>
+                    </person>
+                </listPerson>
+<!--LISTA LUOGHI-->
+                <listPlace>
+                    <place xml:id="SP">
+                        <placeName>La Spezia</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">La Spezia</district>
+                        <district type="provincia">SP</district>
+                        <region type="state">Liguria</region>
+                        <country key="IT">IT</country>
+                    </place>
+                    <place xml:id="PI">
+                        <placeName>Pisa</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Pisa</district>
+                        <district type="provincia">PI</district>
+                        <region type="state">Toscana</region>
+                        <country key="IT">IT</country>
+                    </place>
+                    <!--lista dei luoghi all'interno delle due cartoline-->
+                    <place xml:id="MI">
+                        <placeName>Milano</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Milano</district>
+                        <district type="provincia">MI</district>
+                        <region type="state">Lombardia</region>
+                        <country key="IT">IT</country>
+                        <note> Informazioni sulla Proprietà Artistica Riservata (cartolina 91) </note>
+                    </place>
+                    <place xml:id="M">
+                        <placeName>Modena</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <region type="state">Emilia-Romagna</region>
+                        <country key="IT">IT</country>
+                    </place>
+                    <place xml:id="R">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <region type="state">Emilia-Romagna</region>
+                        <country key="IT">IT</country>
+                    </place>
+                </listPlace>
+<!--LISTA ORGANIZZAZIONI-->
+                <listOrg>
+                    <org xml:id="LCD">
+                         <orgName>
+					    	<choice>
+                        	    <abbr>LabCD</abbr>
+                         	    <expan>Laboratorio di Cultura Digitale</expan>
+                   	    	 </choice>
+                          <placeName ref="#PI">Pisa</placeName>
+					    </orgName>
+                    </org>
+                    <!--organizzazioni interne alle cartoline -->
+                    <org xml:id="URS1">
+                        <orgName>
+                          <choice>
+                                <abbr>Uff.</abbr>
+                                <expan>Uff<ex>icio</ex></expan>
+                            </choice>
+                            <choice>
+                                <abbr>Rev.</abbr>
+                                <expan>Rev<ex>isioni</ex></expan>
+                            </choice> Stampa
+                            <choice>
+                                  <abbr>N.</abbr>
+                                 <expan>N<ex>umero</ex></expan>
+                            </choice> 894 -
+                            <placeName ref="#MI">Milano</placeName>
+                            <date when="1917-05-25">25-5-1917</date>
+                        </orgName>
+                    </org>
+                </listOrg>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+<!--CARTOLINA 84-->
+    <TEI xml:id="cart7694-084">
+    <teiHeader>
+        <fileDesc> <!--contiene le informazioni relative al file digitale-->
+            <titleStmt> <!--titolo e reponsabili dell'edizione digitale-->
+                <title>Amore campestre - Edizione digitale</title>
+                <respStmt>
+                    <resp>Trascritto da:</resp>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Ente di Appartenenza:</resp>
+                    <name type="comune">Comune di
+                        <placeName ref="list.xml#SP">La Spezia</placeName>
+                    </name>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt> <!--contiene informazioni sull'edizione-->
+                <edition>Studenti di Codifica di testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <date when="2021">2021</date>
+                </edition>
+
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Compilatori:</resp>
+                    <persName ref="list.xml#TC">Tommaso Castagneto</persName>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico:</resp>
+                    <persName ref="list.xml#GP">Giacomo Paolocchi</persName>
+                    <persName ref="list.xml#ES">Enrica Salvatori</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <persName ref="list.xml#ER">E. Ratti</persName>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt> <!--contiene informazioni sulla pubblicazione e distribuzione del documento -->
+                <publisher>
+                    <choice>
+                        <abbr>Unipi</abbr>
+                        <expan>Università di
+                            <placeName ref="list.xml#PI">Pisa</placeName>
+                        </expan>
+                    </choice>
+                </publisher>
+                <pubPlace ref="list.xml#PI">Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>
+                    <orgName ref="list.xml#LCD">
+                        <choice>
+                            <abbr>LabCD</abbr>
+                            <expan>Laboratorio di Cultura Digitale</expan>
+                        </choice>
+                    </orgName>
+                </distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di
+                        <placeName ref="list.xml#PI">Pisa</placeName>
+                    </addrLine>
+                </address>
+            </publicationStmt>
+
+            <sourceDesc> <!--informazioni ricavate dalla fonte originale-->
+                <bibl>
+                    <title>Amore campestre</title>
+                    <publisher>
+                        <persName ref="list.xml#AB">Adolfo Busi</persName>
+                    </publisher>
+                    <!--dalla fonte originale non sono ricavabili altre informazioni relative al luogo e alla data di stampa-->
+                </bibl>
+
+                <msDesc> <!--descrizione del manoscritto-->
+                    <msIdentifier> <!--informazioni identificative del manoscritto-->
+                        <country>Italia</country>
+                        <settlement ref="list.xml#SP" type="city">La Spezia</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                        <idno type="inventory">7694_084_001/002</idno> <!--riferimento al codice identificativo della cartolina-->
+                    </msIdentifier>
+
+                    <msContents> <!--informazioni sul contenuto della cartolina-->
+                        <summary>Cartolina Artistica</summary>
+                        <textLang mainLang="ita">Italiano</textLang>
+                    </msContents>
+                    <physDesc> <!--descrizione fisica del manoscritto-->
+                        <objectDesc>
+                            <supportDesc>
+                                <support> <!--materiale che costituisce il manoscritto-->
+                                    <objectType>Cartolina</objectType>
+                                    <material>Carta</material>
+                                    <measure type="composition" unit="foglio" quantity="1">1</measure>
+                                    <dimensions unit="cm">
+                                        <height>14</height>
+                                        <width>9</width>
+                                    </dimensions>
+                                    <stamp type="postage">Francobollo di forma rettangolare delle Poste Italiane in posizione rovesciata in bianco e nero da 5 centesimi, ricoperto per metà dal timbro postale.
+                                    </stamp>
+                                    <stamp type="postmark">
+                                    Timbro di partenza totalmente leggibile e posizionato in parte sopra al francobollo.
+                                    </stamp>
+                                    <!--descrizione oggettiva di quello che la cartolina rappresenta-->
+                                    <p>Il fronte della cartolina presenta l'immagine artistica di <persName ref="list.xml#AB">Busi Adolfo</persName>: due donne con i copricapi in abiti campestri che si abbracciano in un bosco (presumibile dallo sfondo caratterizzato da tronchi di alberi) con un mazzo di fiori.
+                                     Il retro che riporta un timbro e il francobollo è il vero corpo della lettera: le indicazioni del luogo del mittente, il messagio e le indicazioni del destinatario,
+                                     in basso a sinistra si trova la scritta stampata "Adolfo Busi - Amore campestre" mentre al centro, sotto la riga al centro della cartolina è stampato il numero "45".
+                                    </p>
+                                </support>
+                                <condition> <!--descrizione delle condizioni fisiche della cartolina-->
+                                    Cartolina in buone condizioni fisiche, nella parte sinistra la carta presenta delle macchie giallastre dovute all'invecchiamento, l'inchiostro nero si è mantenuto intatto e la scrittura alterna parti più marcate e parti meno.
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc> <!--descrizione del tipo di scrittura nella cartolina-->
+                            <p>La scrittura a mano è leggibile</p>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc> <!--descrizione degli aspetti non bibliografici-->
+            <correspDesc> <!--descrizione delle azioni relative all'atto di corrispondenza-->
+                <correspAction type="sent">
+                    <persName ref="list.xml#G" role="writer">Giovanni</persName>
+                    <placeName ref="list.xml#M">Modena</placeName>
+                    <date type="writing" when="1917-05-23">23/05/1917</date>
+                    <date type="postmark" when="1723-05-23">23/05/1723</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="list.xml#OT">Oliva Turtura</persName>
+                    <placeName ref="list.xml#R">Ravenna</placeName>
+                </correspAction>
+            </correspDesc>
+
+            <textClass> <!--descrive le informazioni riguardo la natura o l'argomento-->
+                <keywords scheme="http://etnografico.museilaspezia.it/">
+                    <term>Cartolina</term> <!--soggettario-->
+                    <term>Cartolina artistica</term> <!--tipologia-->
+                    <term>Due donne in un bosco con un mazzo di fiori</term> <!--descrizione-->
+                </keywords>
+            </textClass>
+
+            <langUsage> <!--lingua usata nel testo-->
+                <language ident="it-IT">Italiano</language>
+            </langUsage>
+        </profileDesc>
+
+        <encodingDesc> <!--descrizione della codifica-->
+            <p>Codifica di base rispettando le forme e le informazioni lessicali, la punteggiatura e la sillabazione del documento,
+            normalizzando il tutto per la codifica. Validazione delle cartoline con con xmllint e creazione della dtd con tei Roma.</p>
+        </encodingDesc>
+    </teiHeader>
+
+    <!--Coordinate calcolate  tramimte il tool TEI Zoner-->
+    <facsimile> <!--rappresentazione della fonte scritta sotto forma di una serie di immagini -->
+        <surface n="1" xml:id="i7694-084Rl" ulx="25" uly="22" lrx="858" lry="989"> <!--definisce una superficie scritta in termini di uno spazio rettangolare di coordinate-->
+            <graphic url='7694-084R.jpg' width='1653px' height='1021px' />
+            <!-- retro della cartolina parte sinistra-->
+            <zone ulx="673" uly="37" lrx="831" lry="922" rendition="Line" xml:id="i084Rl_line1"/> <!--Modena...-->
+            <zone ulx="467" uly="40" lrx="664" lry="916" rendition="Line" xml:id="i084Rl_line2"/>
+            <zone ulx="109" uly="41" lrx="459" lry="913" rendition="Line" xml:id="i084Rl_line3"/> <!--Giovanni-->
+            <zone ulx="51" uly="947" lrx="875" lry="984" rendition="Line" xml:id="i084Rl_line4"/> <!--Adolfo Busi - Amore campestre. 45-->
+            <!--(84) seconda mano-->
+            <zone ulx="44" uly="33" lrx="169" lry="118" rendition="HotSpot" xml:id="i084Rl_hotspot1"/>
+        </surface>
+
+        <surface n="2" xml:id="i7694-084Rr" ulx="863" uly="24" lrx="1637" lry="978"> <!--definisce una superficie scritta in termini di uno spazio rettangolare di coordinate-->
+            <graphic url='7694-084R.jpg' width='1653px' height='1021px'/> <!--retro della cartolina-->
+            <!--parte destra (informazioni destinatario)-->
+            <zone ulx="855" uly="186" lrx="1469" lry="385" rendition="Line" xml:id="i084Rr_line1"/>
+            <zone ulx="863" uly="403" lrx="1579" lry="562" rendition="Line" xml:id="i084Rr_line2"/>
+            <zone ulx="868" uly="565" lrx="1651" lry="726" rendition="Line" xml:id="i084Rr_line3"/>
+            <zone ulx="934" uly="730" lrx="1623" lry="950" rendition="Line" xml:id="i084Rr_line4"/>
+            <!--timbro-->
+            <zone ulx="1153" uly="8" lrx="1476" lry="298" rendition="HotSpot" xml:id="i084Rr_hotspot1" />
+            <!--francobollo-->
+            <zone ulx="1336" uly="13" lrx="1641" lry="252" rendition="HotSpot" xml:id="i084Rr_hotspot2"/>
+        </surface>
+
+        <surface n="3" xml:id="i7694-084F"> <!--definisce una superficie scritta in termini di uno spazio rettangolare di coordinate-->
+            <graphic url='7694-084F.jpg' width='1028px' height='1644px' />
+            <!--fronte della cartolina (immagine artistica)-->
+            <zone ulx="256" uly="296" lrx="790" lry="1425" rendition="HotSpot" xml:id="i084F_hotspot1"/> <!--donne-->
+            <zone ulx="323" uly="533" lrx="574" lry="799" rendition="HotSpot" xml:id="i084F_hotspot2"/> <!--mazzo di fiori-->
+            <zone ulx="51" uly="57" lrx="975" lry="1432" rendition="HotSpot" xml:id="i084F_hotspot3"/> <!--bosco (sfondo alto dell'immagine)-->
+        </surface>
+    </facsimile>
+
+    <text type="cartolina" xml:id="i7694-084" n="084"> <!--riferimento alla cartolina nel suo insieme-->
+        <front xml:id="i7694-084Rl_copy" facs="#i7694-084Rl"> <!--parte preliminare "Adolfo Busi - Amore campestre. 45"-->
+            <div type="print" rend="horizontal" xml:id="i084Rl_copy_4" facs="#i084Rl_line4">
+                <p><persName ref="list.xml#AB">Adolfo Busi</persName>
+                    <title>Amore Campestre</title>.
+                    45
+                </p>
+            </div>
+        </front>
+
+        <body xml:lang="ita">
+            <div type="retro" xml:id="i7694-084Rl_cont" facs="#i7694-084Rl"> <!--retro sinistro cartolina-->
+                <opener> <!--inizia con luogo e data della stesura-->
+                    <dateline>
+                        <lb xml:id="i084Rl_ln_1" n="1" facs="#i084Rl_line1"/>
+                        <s type="sentence" n="s_1">
+                            <placeName ref="list.xml#M">Modena</placeName>
+                            lì
+                            <date when="1917/5/23">23/5 1917</date>
+                        </s>
+                    </dateline>
+                </opener>
+                <div type="postcard-body"> <!--contiene il testo della cartolina-->
+                    <p>
+                        <s type="sentence" n="s_2">
+                            <lb xml:id="i084Rl_ln_2" n="2" facs="#i084Rl_line2"/>Un ricordo affettuoso
+                        </s>
+                    </p>
+                </div>
+                <closer> <!--parte conclusiva della lettera con la firma del mittente-->
+                    <lb xml:id="i084Rl_ln_3" n="3" facs="#i084Rl_line3"/>
+                    <signed rend="aligne(center)">
+                        <persName ref="list.xml#G" role="sender">
+                            <forename>
+                                <hi rend="underline">Giovannino</hi>
+                            </forename>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+            <div type="address-destination"> <!--informazioni del destinatario-->
+                <ab>
+                    <address>
+                        <lb xml:id="i084Rr_ln_1" n="1" facs="#i084Rr_line1"/>
+                        <addrLine>Gentilissima
+                            <abbr type="title">Sig.</abbr>
+                            <expan>Sig<ex>nora</ex></expan>
+                        </addrLine>
+                        <lb xml:id="i084Rr_ln_2" n="2" facs="#i084Rr_line2"/>
+                        <addrLine>
+                            <persName ref="list.xml#OT">Olivia Turtura</persName>
+                        </addrLine>
+                        <lb xml:id="i084Rr_ln_3" n="3" facs="#i084Rr_line3"/>
+                        <addrLine>Via Girolamo Rossi 58</addrLine>
+                        <lb xml:id="i084Rr_ln_4" n="4" facs="#i084Rr_line4"/>
+                        <addrLine>
+                            <placeName ref="list.xml#R">Ravenna</placeName>
+                        </addrLine>
+                    </address>
+                </ab>
+            </div>
+        </body>
+        <back facs="#i7694-084Rl"><!--contenuti del retro sinistro della cartolina che seguono la parte principale del testo -->
+            <div type="retro"><!--numero scritto a mano-->
+                <ab type="paratext" subtype="addition" hand="#h1" xml:id="i084Rl_hs_1" facs="#i084Rl_hotspot1">
+                    <num value="84">84</num>
+                </ab>
+            </div>
+            <div xml:id="i084Rr_hs_2" facs="#i084Rr_hotspot2" type="sent"><!--francobollo-->
+                <ab>
+                    <stamp type="postage" rend="rectangular">
+                        <mentioned rend="uppercase">Poste Italiane 5 centesimi</mentioned>
+                    </stamp>
+                </ab>
+            </div>
+            <div xml:id="i084Rr_hs_1" facs="#i084Rr_hotspot1" type="sent"><!--timbro-->
+                <ab>
+                    <stamp type="postmark" rend="circular">
+                        <mentioned>
+                            <placeName ref="list.xml#M" rend="uppercase">Modena</placeName>
+                            <date when="1723-5-23">23.5.17</date>23
+                        </mentioned>
+                    </stamp>
+                </ab>
+            </div>
+        </back>
+
+        <figure xml:id="i7694-084Fall" facs="#i7694-084F"><!--rappresenta il fronte della cartolina (tutta l'immagine)-->
+            <figure xml:id="i084F_hsf_1" facs="#i084F_hotspot1"><!--donne-->
+                <figDesc>Donna con cappello che abbraccia una ragazza di giovane età in abiti campestri.</figDesc>
+            </figure>
+
+            <figure xml:id="i084F_hsf_2" facs="#i084F_hotspot2">
+                <figDesc>Mazzo di fiori sorretto da una delle due donne.</figDesc>
+            </figure>
+
+            <figure xml:id="i084F_hsf_3" facs="#i084F_hotspot3"><!--descrizione dello sfondo-->
+                <figDesc>Alberi che creano effetto bosco alle spalle delle due donne.</figDesc>
+            </figure>
+        </figure>
+    </text>
+    </TEI>
+
+<!--CARTOLINA 91-->
+    <TEI xml:id="cart7694-091">
+    <teiHeader>
+        <fileDesc><!--Contiene informazioni relative al documento digitale-->
+            <titleStmt> <!--Indicazioni del titolo e del respondabile dell'edizione-->
+                <title>Donna in posa - Edizione digitale</title>
+                <respStmt>
+                    <resp>Trascritto da:</resp>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Ente di Appartenenza:</resp>
+                    <name type="comune">Comune di
+                        <placeName ref="list.xml#SP">La Spezia</placeName>
+                    </name>
+                </respStmt>
+
+            </titleStmt>
+
+            <editionStmt> <!--informazioni relative all'edizione-->
+                <edition>Studenti di Codifica di testi, Corso di Laurea Magistrale di Informatica Umanistica, Università di Pisa
+                    <date when="2021">2021</date>
+                </edition>
+
+                <respStmt>
+                    <resp>Codificato da:</resp>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Compilatori:</resp>
+                    <persName ref="list.xml#TC">Tommaso Castagneto</persName>
+                    <persName ref="list.xml#GB">Giulia Bellandi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <persName ref="list.xml#ES">Enrica Salvatori</persName>
+                    <persName ref="list.xml.GP">Giacomo Paolicchi</persName>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile:</resp>
+                    <persName ref="list.xml#ER">E. Ratti</persName> <!--ATTEZIONE ci sono due fonti che danno indicazioni diverse riguardo il nome -->
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt> <!--informazioni relative alla pubblicazione e distribuzione del documento digitale-->
+                <publisher>
+                    <choice>
+                        <abbr>Unipi</abbr>
+                        <expan>Università di
+                            <placeName ref="list.xml#PI">Pisa</placeName>
+                        </expan>
+                    </choice>
+                </publisher>
+                <pubPlace ref="list.xml#PI">Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>
+                    <orgName ref="list.xml#LCD">
+                        <choice>
+                          <abbr>LabCD</abbr>
+                         <expan>Laboratorio di Cultura Digitale</expan> <!--Identificativo per specificare l'abbreviazione soprastante-->
+                        </choice>
+                    </orgName>
+                </distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine><placeName ref="list.xml#PI">Pisa</placeName></addrLine>
+                </address>
+            </publicationStmt>
+
+            <notesStmt> <!--contiene note aggiuntive-->
+                <note n="1">Sul retro troviamo la stampa "Proprietà artistica riservata - Uff. Rev. Stampa N. 894 Milano - 25-5-1917"</note>
+                <note n="2">T. Corbella è l'autore dell'opera in fronte</note>
+            </notesStmt>
+
+            <sourceDesc> <!-- contiene informazoni relative alla fonte originale -->
+				<bibl>
+                    <title type="custom" resp="#ES">[Donna in posa]</title> <!-- titolo tra parentesi quadre perchè titolo formulato da terzi-->
+                    <publisher>
+                    	<orgName ref="list.xml#URS1">
+	                        <choice>
+	                            <abbr>Uff.</abbr>
+	                            <expan>Uff<ex>icio</ex></expan>
+	                        </choice>
+	                        <choice>
+	                            <abbr>Rev.</abbr>
+	                            <expan>Rev<ex>isioni</ex></expan>
+	                        </choice> Stampa
+						</orgName>
+					</publisher>
+					<availability>
+						<p>Proprietà artistica riservata</p>
+					</availability>
+                    <pubPlace ref="list.xml#MI">Milano</pubPlace>
+                    <date when="1917-05-25">25-5-1917</date>
+				</bibl>
+
+                <msDesc> <!--descrizione del manoscritto -->
+					<msIdentifier> <!-- informazioni identificative del manoscritto -->
+						<country>Italia</country>
+						<settlement ref="list.xml#SP" type="city">La Spezia (SP)</settlement>
+						<repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+						<idno type="inventory">7694_091_001/002</idno>	<!-- riferimento al codice identificativo della cartolina -->
+					</msIdentifier>
+
+                    <msContents> <!-- informazioni sul contenuto della cartolina-->
+						<summary>Cartolina Artistica </summary>
+						<textLang mainLang="ita">Italiano</textLang>
+					</msContents>
+
+					<physDesc> <!--descrizione fisica del manoscritto -->
+						<objectDesc>
+							<supportDesc>
+								<support> <!-- materiale che costituisce il manoscritto-->
+									<objectType> Cartolina</objectType>
+									<material>Carta</material>
+									<measure type="composition" unit="foglio" quantity="1">1</measure>
+									<dimensions unit="cm">
+										<height>14</height>
+										<width>9</width>
+									</dimensions>
+
+                                    <!--descrizione oggettiva di quello che la cartolina rappresenta-->
+                                    <p>Il fronte della cartolina presenta l'immagine artistica di <persName ref="list.xml#TCorb">T. Corbella</persName>: una donna in primo piano in posa.
+                                        Il retro che non riporta né timbri nè francobolli è il vero corpo della lettera: contiene il nome del mittente e del detinatario ma non vengono fornite indicazioni del luogo e della data (nè riguardo al mittente nè riguardo al ricevente).
+                                        Il lato sinistro della cartolina è privo di alcune parti che rendono leggibile solo parte del testo: in verticale è possibile leggere le parole "Proprietà", "894", "Milano" e "25-5-1917".
+                                    </p>
+                                </support>
+                                <condition> <!--descrizione delle condizioni fisiche della cartolina-->
+                                    Cartolina in condizioni fisiche mediocri: al centro la carta è invecchiata dal tempo e presenta delle macchie, il lato e l'angolo in alto a sinistra mancano di porzioni di carta che rendono il testo di difficile lettura.
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <p>La scrittura a mano è leggibile e ancora molto marcata</p>
+                        </handDesc>
+                    </physDesc>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc> <!--descrizione degli aspetti non bibliografici-->
+            <correspDesc> <!--descrizione delle azioni relative all'atto di corrispondenza-->
+                <correspAction type="sent">
+                    <persName ref="list.xml#G" role="writer">Giovanni</persName>
+                    <!--non contiene informazioni sul luogo di stesura-->
+                    <!--non contiene informazioni sulla data di stesura-->
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="list.xml#OT">Olivia Turtura</persName>
+                </correspAction>
+            </correspDesc>
+
+            <textClass> <!--descrive le informazioni rigurardo la natura o l'argomento-->
+                <keywords scheme="http://etnografico.museilaspezia.it/">
+                    <term>Cartolina</term> <!--soggettario-->
+                    <term>Cartolina Artistica</term><!--tipologia-->
+                    <term>Ritratto di donna in posa</term><!--descrizione-->
+                </keywords>
+            </textClass>
+
+            <langUsage><!--ingua usata nel testo-->
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+        </profileDesc>
+
+        <encodingDesc> <!--descrizione della codifica-->
+            <p>Codifica di base rispettando le forme e le informazioni lessicali, la punteggiatura e la sillabazione del documento,
+            normalizzando il tutto per la codifica. Validazione delle cartoline con con xmllint e creazione della dtd con tei Roma.</p>
+        </encodingDesc>
+
+    </teiHeader>
+
+    <!--Coordinate calcolate  tramimte il tool TEI Zoner-->
+    <facsimile> <!--rappresentazione della fonte scritta sotto forma di una serie di immagini-->
+        <surface n="1" xml:id="i7694-091R" ulx="11" uly="8" lrx="1634" lry="1026"> <!--definisce una superficie scritta in termini di uno spazio rettangolare di coordinate-->
+            <graphic url='7694-091R.jpg' width='1648px' height='1041px' />
+            <!--retro cartolina-->
+            <zone ulx="77" uly="18" lrx="1583" lry="96" rendition="Line" xml:id="i091R_line1"/><!--prima riga del testo-->
+            <zone ulx="41" uly="119" lrx="1601" lry="165" rendition="Line" xml:id="i091R_line2"/>
+            <zone ulx="42" uly="175" lrx="1609" lry="228" rendition="Line" xml:id="i091R_line3"/>
+            <zone ulx="41" uly="278" lrx="1586" lry="305" rendition="Line" xml:id="i091R_line4"/>
+            <zone ulx="54" uly="348" lrx="1612" lry="384" rendition="Line" xml:id="i091R_line5"/>
+            <zone ulx="57" uly="420" lrx="1497" lry="456" rendition="Line" xml:id="i091R_line6"/>
+            <zone ulx="59" uly="493" lrx="1627" lry="541" rendition="Line" xml:id="i091R_line7"/>
+            <zone ulx="71" uly="592" lrx="1552" lry="596" rendition="Line" xml:id="i091R_line8"/>
+            <zone ulx="68" uly="666" lrx="1585" lry="696" rendition="Line" xml:id="i091R_line9"/>
+            <zone ulx="68" uly="746" lrx="1554" lry="785" rendition="Line" xml:id="i091R_line10"/>
+            <zone ulx="51" uly="816" lrx="1610" lry="856" rendition="Line" xml:id="i091R_line11"/>
+            <zone ulx="54" uly="888" lrx="1611" lry="953" rendition="Line" xml:id="i091R_line12"/>
+            <zone ulx="31" uly="966" lrx="451" lry="1025" rendition="Line" xml:id="i091R_line13"/>
+            <zone ulx="521" uly="963" lrx="1284" lry="1015" rendition="Line" xml:id="i091R_line14"/> <!--Saluti-->
+            <zone ulx="1305" uly="936" lrx="1633" lry="1022" rendition="Line" xml:id="i091R_line15"/><!--Giovannino-->
+            <zone ulx="27" uly="61" lrx="97" lry="994" rendition="Line" xml:id="i091R_line16"/><!--scritta verticale (Proprietà)-->
+            <zone ulx="733" uly="964" lrx="821" lry="994" rendition="Line" xml:id="i091R_line17"/><!--numero in fondo centrale-->
+            <zone ulx="1323" uly="49" lrx="1607" lry="339" rendition="Line" xml:id="i091R_line18"/><!--Produzione italiana-->
+            <!--scrittura di seconda mano (91)-->
+            <zone ulx="1520" uly="673" lrx="1618" lry="731" rendition="HotSpot" xml:id="i091R_hotspot1"/>
+        </surface>
+
+        <surface n="2" xml:id="i7694-091F" ulx="14" uly="10" lrx="1035" lry="1641">
+            <graphic url='7694-091F.jpg' width='1040px' height='1652px' />
+            <!--fronte della cartolina-->
+            <zone ulx="51" uly="53" lrx="1016" lry="1585" rendition="HotSpot" xml:id="i091F_hotspot1"/><!--immagine di donna-->
+            <zone ulx="46" uly="1105" lrx="441" lry="1163" rendition="HotSpot" xml:id="i091F_hotspot2"/><!--scritta-->
+            <zone ulx="291" uly="1533" lrx="608" lry="1648" rendition="HotSpot" xml:id="i091F_hotspot3"/><!--carta mancante al centro -->
+            <zone ulx="947" uly="1554" lrx="1037" lry="1649" rendition="HotSpot" xml:id="i091F_hotspot4"/><!--carta mancante al lato destro-->
+        </surface>
+
+    </facsimile>
+
+    <text type="cartolina" xml:id="i7694-091" n="091"><!--riferimento alla cartolina nel suo insieme-->
+        <front xml:id="i7694-091R_pr" facs="#i7694-091R"><!--parte preliminare che indica in questo caso la proprietà artistica-->
+            <div type="print" rend="vertical" xml:id="i091R_ln16" facs="#i091R_line16">
+                <p>Proprietà
+                    <damage agent="rubbing"><supplied resp="#TM"> artistica riservata -
+                        <orgName ref="list.xml#URS1">
+                            <choice>
+                                <abbr>Uff.</abbr>
+                                <expan>Uff<ex>icio</ex></expan>
+                            </choice>
+                            <choice>
+                                <abbr>Rev.</abbr>
+                                <expan>Rev<ex>isioni</ex></expan>
+                            </choice> Stampa
+                        </orgName>
+                            <choice>
+                                <abbr>N.</abbr>
+                                <expan>N<ex>umero</ex></expan>
+                            </choice> 894 -
+                        </supplied>
+                    </damage>
+                    <placeName ref="list.xml#MI">Milano</placeName>,
+                    <date when="1917-05-25">25-5-1917</date>
+                </p>
+            </div>
+        </front>
+
+        <body xml:lang="ita">
+            <div type="postcard">
+                <div type="postcard-body" n="t_01"><!--contiene il testo della cartolina-->
+                    <p>
+                        <s type="sentence" n="s_02">
+                            <lb xml:id="i091R_ln_1" n="1" facs="#i091R_line1"/><damage agent="rubbing"><supplied resp="#GB">Oliva</supplied></damage> cara, ogni qualvolta è domenica il cuore
+                            <lb xml:id="i091R_ln_2" n="2" facs="#i091R_line2"/> mi si stringe in una dolorosa sensazione di tristezza.
+                            <lb xml:id="i091R_ln_3" n="3" facs="#i091R_line3"/> Quest'oggi poi ho dovuto perdere il mio tempo ad ascoltare
+                            <lb xml:id="i091R_ln_4" n="4" facs="#i091R_line4"/> una conferenza d'indole militare e mi sono ridotto a
+                            <lb xml:id="i091R_ln_5" n="5" facs="#i091R_line5"/><damage agent="rubbing"><supplied resp="#GB"> sc</supplied></damage>riverti ora per non lasciarti domani senza un mio bacio.
+                            <lb xml:id="i091R_ln_6" n="6" facs="#i091_line6"/><damage agent="rubbing"><supplied resp="#GB"> Qu</supplied></damage>esta sera ti prometto che resisterò lungamente.
+                            <lb xml:id="i091R_ln_7" n="7" facs="#i091_line7"/><damage agent="rubbing"><supplied resp="#GB"> O</supplied></damage>livia cara ho l'animo chiuso a tutte le gioie della
+                            <lb xml:id="i091R_ln_8" n="8" facs="#i091_line8"/><gap unit="word" quantity="1"/> ma non ne sento granché dispiacere. Vorrei
+                            <lb xml:id="i091R_ln_9" n="9" facs="#i091R_line9"/><gap unit="word" quantity="1"/> che tu mi fossi vicina sempre per rendermi
+                            <lb xml:id="i091R_ln_10" n="10" facs="i091R_line10"/><damage agent="rubbing"><supplied resp="#GB"></supplied>a</damage>ncora più esclusivo all'amore tuo, anche nei
+                            <lb xml:id="i091R_ln_11" n="11" facs="i091R_line11"/> minimi particolari della vita che sono in fondo
+                            <lb xml:id="i091R_ln_12" n="12" facs="i091R_line12"/> la sostanza essenziale per una intera e perfetta comunio
+                            <lb xml:id="i091R_ln_13" n="13" facs="i091R_line13"/> ne d'affetto.
+                        </s>
+                    </p>
+                </div>
+                <closer> <!--contiene le conclusioni della cartolina e la firma-->
+                    <salute>
+                        <s type="sentence" n="s_03">
+                            <lb xml:id="i091R_ln_14" n="14" facs="#i091R_line14"/> Un bacio e l'animo mio.
+                        </s>
+                    </salute>
+                    <signed rend="aligne (right)" xml:id="i091R_ln_15" facs="#i091R_line15">
+                        <persName ref="list.xml#Giov" role="sender">
+                            <forename type="diminutive">
+                                <hi rend="underline">Giovannino</hi>
+                            </forename>
+                        </persName>
+                    </signed>
+                </closer>
+            </div>
+        </body>
+        <back>
+            <div type="retro"><!--scritta di seconda mano (91)-->
+                <ab type="paratext" subtype="addition" hand="#h1" xml:id="i091R_hs_1" facs="#i091R_hotspot1">
+                    <num value="91">91</num>
+                </ab>
+            </div>
+            <div xml:id="i091_ln_17" facs="#i091R_line17">
+                <ab type="print">
+                    <num value="232-1">232-1</num>
+                </ab>
+            </div>
+            <div xml:id="i091R_ln_18" facs="#i091R_line18">
+                <ab>
+                    <stamp type="postage" rend="rectangular">
+                        <mentioned rend="uppercase">Produzione italiana</mentioned>
+                        <note>La scritta è all'interno del rettangolo dedicato al francobollo mancante</note>
+                    </stamp>
+                </ab>
+            </div>
+        </back>
+        <figure xml:id="i7694-091Fall" facs="#i7694-091F"><!--contiene tutta l'immagine-->
+            <figure xml:id="i091F_hs_1" facs="#i091F_hotspot1"><!--ritratto di donna-->
+                <figDesc>In primo piano il ritratto di una bella donna sorridente che rivolge lo sguardo a sinistra. Dall'immagine si vede la parte superiore dell'abito
+                che è caratterizzato da una stoffa chiara e da una scollatura che fa intravedere il collo della donna. I capelli scuri sono raccolti sul dietro e scendono davanti
+                sulla fronte.</figDesc>
+            </figure>
+            <figure xml:id="i091F_hs_2" facs="#i091F_hotspot2"><!--scritta-->
+                <figDesc>T. Corbella è la firma dell'autore del ritratto raffigurato sul fronte della cartolina.</figDesc>
+            </figure>
+            <figure xml:id="i091F_hs_3" facs="#i091F_hotspot3"><!--carta mancante al centro-->
+                <figDesc>Centralmente il lato basso della cartolina è mancante della carta.</figDesc>
+            </figure>
+            <figure xml:id="i091F_hs_4" facs="#i091F_hotspot4"><!--carta mancante a destra-->
+                <figDesc>A destra il lato basso della cartolina è mancante della carta.</figDesc>
+            </figure>
+        </figure>
+    </text>
+    </TEI>
+</teiCorpus>
